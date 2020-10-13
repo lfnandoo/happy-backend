@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner, Table} from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class createOrphanages1602594032077 implements MigrationInterface {
   
@@ -37,6 +37,10 @@ export class createOrphanages1602594032077 implements MigrationInterface {
         {
           name: 'instrucionts',
           type: 'text'
+        },
+        {
+          name: 'opening_hours',
+          type: 'varchar',
         },
         {
           name: 'open_on_weekends',
